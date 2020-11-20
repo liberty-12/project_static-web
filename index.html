@@ -1,10 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Backstage Beauty salon</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="logo">
+                <a class="logo__link">
+                    <img class="logo__image" src="img/logo.svg" width="62" height="62" alt="Логотип Backstage Beauty studio">
+                </a>
+            </div>
+            <nav class="navigation navigation--closed navigation--nojs">
+                <button class="navigation__toggle" type="button" aria-label="Open menu"></button>
+                <ul class="navigation__nav-list">
+                    <li class="navigation__item navigation__item--active">
+                        <a class="navigation__link" href="about.html">Domu</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="about.html">O nás</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="price.html">Ceník</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="contacts.html">Kontakt</a>
+                    </li>
+                </ul>
+                <ul class="navigation__user-list">
+                    <li class="navigation__item navigation__item--map">
+
+                    </li>
+                    <li class="navigation__item navigation__item--address">
+                        <span class="navigation__day">každý den</span>
+                        <span class="navigation__hours">10:00 - 20:00</span>
+                        <span class="navigation__address">Vyšehradská 27</span>
+                    </li>
+                    <li class="navigation__item navigation__item--phone">
+                        <a class="navigation__link" href="tel:+420 720-240-763">
+                            +420 720-240-763
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="title">
+            <div class="title__wrapper">
+                <h1 class="title__title">Backstage beauty salon</h1>
+                <span class="title__subtitle">I v dobu koronaviru si jakoukoliv službu můžete objednat domů!</span>
+                <a href="#" class="title__link btn">objednat si </a>
+                <a href="#" class="title__link btn">video ze salonu</a>
+            </div>
+        </div>
+
+        <section class="video">
+            <div class="video__wrapper">
+                <h2 class="video__title">Vítejte na našem salonu <br> (na videu o našem salonu)</h2>
+                <video width="1000" height="auto" controls>
+                    <source src="video/promo_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="services__wrapper">
+                <ul class="services__list">
+                    <li class="services__item">
+                        <img src="" alt="Kadeřnictví" class="services__image">
+                        <span class="services__name">Kadeřnictví</span>
+                    </li>
+                    <li class="services__item">
+                        <img src="" alt="Kosmetika" class="services__image">
+                        <span class="services__name">Kosmetika</span>
+                    </li>
+                    <li class="services__item">
+                        <img src="" alt="Manikúra" class="services__image">
+                        <span class="services__name">Manikúra</span>
+                    </li>
+                    <li class="services__item">
+                        <img src="" alt="Masáže" class="services__image">
+                        <span class="services__name">Masáže</span>
+                    </li>
+                    <li class="services__item">
+                        <img src="" alt="Líčení" class="services__image">
+                        <span class="services__name">Líčení</span>
+                    </li>
+                    <li class="services__item">
+                        <img src="" alt="Pedikúra" class="services__image">
+                        <span class="services__name">Pedikúra</span>
+                    </li>
+                </ul>
+                <a href="price.html" class="services__link btn">CENÍK</a>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="contacts__wrapper">
+                <h2 class="contacts__title">Kontakty</h2>
+                <p class="contacts__address">
+                    Adresa: <br>
+                    Vyšehradská 27 <br>
+                    +420 720-240-763 <br>
+                </p>
+                <p class="contacts__hours">
+                    Otevírací doba: <br>
+                    Po - Ne 10:00 - 20:00
+                </p>
+                <a href="" class="contacts__link contacts__link--instagram">
+
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <ul class="navigation__nav-list">
+                <li class="navigation__item navigation__item--active">
+                    <a class="navigation__link" href="about.html">Domu</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="about.html">O nás</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="price.html">Ceník</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="contacts.html">Kontakt</a>
+                </li>
+            </ul>
+            <p class="footer__copyright">Copyright &copy; 2020 Backstage Beauty salon. All rights reserved.</p>
+            <p class="footer__designer">Designed by Katěrina Kortoškina</p>
+        </div>
+    </footer>
 
 </body>
 </html>
