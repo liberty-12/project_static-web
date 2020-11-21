@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
     <header class="header">
         <div class="header__wrapper">
             <div class="logo">
-                <a class="logo__link">
+                <a class="logo__link" href="#">
                     <img class="logo__image" src="img/logo.svg" width="62" height="62" alt="Логотип Backstage Beauty studio">
                 </a>
             </div>
@@ -25,7 +25,7 @@
                 <button class="navigation__toggle" type="button" aria-label="Open menu"></button>
                 <ul class="navigation__nav-list">
                     <li class="navigation__item navigation__item--active">
-                        <a class="navigation__link" href="about.html">Domu</a>
+                        <a class="navigation__link" href="#">Domu</a>
                     </li>
                     <li class="navigation__item">
                         <a class="navigation__link" href="about.html">O nás</a>
@@ -80,27 +80,27 @@
             <div class="services__wrapper">
                 <ul class="services__list">
                     <li class="services__item">
-                        <img src="" alt="Kadeřnictví" class="services__image">
+                        <img src="img/sluzby-kadernictvi@1x.jpg" alt="Kadeřnictví" class="services__image">
                         <span class="services__name">Kadeřnictví</span>
                     </li>
                     <li class="services__item">
-                        <img src="" alt="Kosmetika" class="services__image">
+                        <img src="img/sluzby-kosmetika@1x.jpg" alt="Kosmetika" class="services__image">
                         <span class="services__name">Kosmetika</span>
                     </li>
                     <li class="services__item">
-                        <img src="" alt="Manikúra" class="services__image">
+                        <img src="img/sluzby-manikura@1x.jpg" alt="Manikúra" class="services__image">
                         <span class="services__name">Manikúra</span>
                     </li>
                     <li class="services__item">
-                        <img src="" alt="Masáže" class="services__image">
+                        <img src="img/sluzby-masaze@1x.jpg" alt="Masáže" class="services__image">
                         <span class="services__name">Masáže</span>
                     </li>
                     <li class="services__item">
-                        <img src="" alt="Líčení" class="services__image">
+                        <img src="img/sluzby-obliceni@1x.jpg" alt="Líčení" class="services__image">
                         <span class="services__name">Líčení</span>
                     </li>
                     <li class="services__item">
-                        <img src="" alt="Pedikúra" class="services__image">
+                        <img src="img/sluzby-pedikura@1x.jpg" alt="Pedikúra" class="services__image">
                         <span class="services__name">Pedikúra</span>
                     </li>
                 </ul>
@@ -147,6 +147,22 @@
             <p class="footer__designer">Designed by Katěrina Kortoškina</p>
         </div>
     </footer>
+
+    <section class="subscribe-popup subscribe-popup--hidden">
+        <div class="subscribe-popup__wrapper">
+            <img src="img/popup-1@1x-7.jpg" alt="Holka" class="subscribe-popup__image">
+            <h2 class="subscribe-popup__title">Buďme v kontaktu</h2>
+            <form class="subscribe-popup__form" action="" method="post">
+                <label for="email" class="visually-hidden">Zadejte email</label>
+                <input type="email" class="subscribe-popup__email" name="email" id="email" placeholder="Zadejte email">
+                <button class="subscribe-popup__button btn" type="submit">Přihlásit se</button>
+            </form>
+            <span class="subscribe-popup__info">Souhlasím se zpracováním osobních údajů</span>
+        </div>
+    </section>
+    <div class="overlay overlay--hidden"></div>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
